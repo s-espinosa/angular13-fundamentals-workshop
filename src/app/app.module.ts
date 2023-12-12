@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
 import { HomeComponent } from './home/home.component';
 import { MaterialModule } from './material.module';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle'
 
 @NgModule({
   imports: [
@@ -15,11 +16,12 @@ import { MaterialModule } from './material.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    MaterialModule,
     HttpClientModule,
+    MaterialModule,
+    MatSlideToggleModule,
   ],
   declarations: [AppComponent, HomeComponent, CoursesComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
